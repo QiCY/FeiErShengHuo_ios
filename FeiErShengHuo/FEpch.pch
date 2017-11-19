@@ -1,0 +1,290 @@
+//
+//  FEpch.pch
+//  FeiErShengHuo
+//
+//  Created by zy on 2017/4/5.
+//  Copyright © 2017年 xjbyte. All rights reserved.
+
+
+#ifndef FEpch_pch
+#define FEpch_pch
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//颜色
+#define UIColorFromRGBValue(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+//颜色相关
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+
+#define Colorgrayall239 RGB(239, 239, 239)
+#define Colorgrayall133 RGB(132,133,134) //#define Colorgrayall239 RGB(219, 219, 219)
+
+
+//界面全局色值
+#define GLOBAL_COLOR_LV         UIColorFromRGBValue(0x99C210)
+#define GLOBAL_COLOR_YELLOW     RGB(36, 171, 66)//UIColorFromRGBValue(0xFECE02)
+#define GLOBAL_COLOR_LAN        UIColorFromRGBValue(0x498CFF)
+#define GLOBAL_BIG_FONT_COLOR       UIColorFromRGBValue(0x444444)
+#define GLOBAL_LITTLE_FONT_COLOR    UIColorFromRGBValue(0x999999)
+#define GLOBAL_BOARD_COLOR          UIColorFromRGBValue(0xE2E2E2)
+
+#define NOTI_REFRESH_DYNAMIC                        @"noti_refresh_dynamic"
+
+//字体 字号
+#define UIColorFromRGBValue(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define FontAndStyle11   [UIFont systemFontOfSize:11]
+#define FontAndStyle12   [UIFont systemFontOfSize:12]
+#define FontAndStyle13   [UIFont systemFontOfSize:13]
+#define FontAndStyle14   [UIFont systemFontOfSize:14]
+#define FontAndStyle15   [UIFont systemFontOfSize:15]
+#define PlaceHolder_TxT_Color [UIColor colorWithHexString:@"#999999"]
+#define Btn_TxTGray_Color [UIColor colorWithHexString:@"#999999"]
+
+#define TxTGray_Color1  [UIColor colorWithHexString:@"#9c9c9c"]
+
+//红色[UIColor colorWithRed:204.0/255.0 green:8.0/255.0 blue:20.0/255.0 alpha:1]
+
+#define button_orange_Color  RGB(253, 109, 29)
+//绿色
+#define Green_Color   RGB(36, 171, 66)
+#define button_gray_Color [UIColor colorWithRed:228.0/255.0 green:229.0/255.0 blue:230.0/255.0 alpha:1]
+#define tableBarFont11 [UIFont fontWithName:@"PingFangSC-Regular" size:12]
+#define tableBarRedColor [UIColor colorWithHexString:@"#e65103"]
+#define tableBarGrayColor [UIColor colorWithHexString:@"#333333"]
+
+
+//得到屏幕bounds
+#define MainS [UIScreen mainScreen].bounds
+
+//得到屏幕高度
+#define MainH [UIScreen mainScreen].bounds.size.height
+
+//得到屏幕宽度
+#define MainW [UIScreen mainScreen].bounds.size.width
+#define DYNAMIC_PICTURE_WIDTH  80
+#define DYNAMIC_PICTURE_HEIGHT 80
+#define DYNAMIC_ARTICLE_VIEW_HEIGHT 140
+#define DEFAULT_FACEBOARD_HEIGHT 200
+
+//常用间隙
+#define  space10   10
+#define  space15   15
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+
+
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+#import "ZSLNetworkConnect.h"
+#import "LoginUtil.h"
+#import "FELoginInfo.h"
+#import "MJExtension.h"
+#import "AFNetworking.h"
+#import "httpTool.h"
+#import "FEBSAFManager.h"
+#import "regular.h"
+#import "FENavTool.h"
+#import "UIColor+ColorChange.h"
+#import "NSString+ZJNsstring.h"
+#import "UIView+PYExtension.h"
+#import "MYUI.h"
+#import "FL_Button.h"
+#import "UIButton+CenterImageAndTitle.h"
+#import "Masonry.h"
+#import "FEBaseNavControllerViewController.h"
+#import "FEconst.h"
+#import "FENavTool.h"
+#import "NSObject+ZJUIStyle.h"
+#import "PullTableView.h"
+#import "HPGrowingTextView.h"
+#import "RYLoadingView.h"
+#import "SDImageCache.h"
+#import "UIImageView+WebCache.h"
+#import "SIAlertView.h"
+#import "CellConfig.h"
+#import "Helper.h"
+#import "PPNumberButton.h"
+#import "IQKeyboardManager.h"
+#import "CheckConfig.h"
+
+#import "RYImageTool.h"
+#import "SDCycleScrollView.h"
+#import "LEETheme.h"
+#import <AlipaySDK/AlipaySDK.h>
+#import "Order.h"
+#import "APAuthV2Info.h"
+#import "RSADataSigner.h"
+#import "MDManager.h"
+#import "StoreDetialViewController.h"
+#import "FELoginViewController.h"
+#import "WXApiManager.h"
+#import "MXWechatConfig.h"
+#import "WXApi.h"
+#import "FEAddinfoViewController.h"
+#import "XHWebImageAutoSize.h"
+#import "UIImageView+WebCache.h"
+#import "BroadLinkHelper.h"
+#import "MXWechatPayHandler.h"
+
+#import "UIGestureRecognizer+RACSignalSupport.h"
+#import "RACSignal.h"
+#import "RACEXTScope.h"
+#import "UITextField+RACSignalSupport.h"
+#import "RACSignal+Operations.h"
+#import "MBProgressHUD+MJ.h"
+#import "NSMutableDictionary+SetObjectContainNil.h"
+
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+
+#import "UITableViewCell+ReuseIdentifier.h"
+#import "UITableViewHeaderFooterView+ReuseIdentifier.h"
+
+// MOB
+#import <ShareSDK/ShareSDK+Base.h>
+#import <ShareSDKUI/ShareSDK+SSUI.h>
+#import <ShareSDKExtension/SSEShareHelper.h>
+#import "AppDelegate.h"
+#import "MobScreenshotCenter.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <ShareSDK/SSDKVideoUploadCenter.h>
+
+#import "MOBShareSDKHelper.h"
+#import "FELoginHelper.h"
+#import "FEWebViewHelper.h"
+// web
+#import "FEBreakRulesViewController.h"
+
+//DDLOG
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import <CocoaLumberjack/DDTTYLogger.h>
+//jsson解析库
+#import "BLJSON.h"
+
+
+//防止循环引用
+#define    WeakSelf __weak typeof(self) weakSelf = self;
+#define  StrongSelf __strong typeof(self) strongSelf = weakSelf;
+
+//图片的简化写法
+#define Image(name) [UIImage imageNamed:name]
+#define isArrayNoNilNoO(array)   array != nil && ![array isKindOfClass:[NSNull class]] && array.count != 0
+
+
+
+
+//正则表达式
+#define kMentionRegularExpression                   @"@(([^(@|\n\r\t )])+)"
+#define kMentionBeforeFirstSpaceRegularExpression   @"[^ ]+(?= )"
+#define kMentionBetweenTwoSpacesRegularExpression   @"(?<= )[^ ]+(?= )"
+#define kTopicRegularExpression                     @"#([^#]+?)#"
+#define kUrlRegularExpression                       @"https?://[A-Za-z0-9_./?&=%-]+"
+#define kAccountNameRegularExpression               @"^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$"
+#define kMobileNumberRegularExpression              @"1[\\d]{10,10}"
+#define kNumberRegularExpression                    @"^\\d+$"
+#define kNickNameRegularExpression                  @"^[-\\d_\\w\u4e00-\u9fa5]+$"
+#define kInvalidNickNameRegularExpression           @"^\\d{11,11}$"
+#define kEmailRegularExpression                     @".+@.+\\..+"
+#define kChineseExpression                          @"^[\u4E00-\u9FA5]*$"
+#define kCompanyNameExpression                      @"^[\u4E00-\u9FA5A-Za-z0-9_]+$"
+
+
+
+
+#define NOTI_REFRESH_INFORMATION                    @"noti_refresh_information"
+#define NOTI_REFRESH_EMP                            @"noti_refresh_emp"
+#define NOTI_REFRESH_OPP                            @"noti_refresh_opp"
+#define NOTI_REFRESH_DYNAMIC                        @"noti_refresh_dynamic"
+#define NOTI_REFRESH_DYNAMIC_SECONDHAND             @"noti_refresh_dynamic_secondhand"
+
+#define NOTI_REFRESH_HEAD_PICTURE                   @"noti_refresh_head_pic"
+#define NOTI_REFRESH_SIGM_FORM                      @"noti_refresh_sign_form"
+// 刷新金额
+#define NOTI_REFRESH_MONEY                       @"noti_refresh_money"
+#define NOTI_REFRESH_CAR                       @"noti_refresh_car"
+#define NOTI_REFRESH_REGION                       @"noti_refresh_region"
+
+
+#define NOTI_REFRESH_TOCar                       @"noti_refresh_tocar"
+#define NOTI_REFRESH_INFO                      @"noti_refresh_info"
+
+#define NOTI_REFRESH_WX                      @"noti_refresh_wx"
+
+
+//刷新高度
+#define NOTI_REFRESH_HW                       @"noti_refresh_hw"
+
+// 建议
+#define NOTI_REFRESH_ADVICE                       @"noti_refresh_advice"
+#define NOTI_REFRESH_REPAIR                      @"noti_refresh_repair"
+
+  
+#define NOTI_Shop_To_Detail                        @"noti_shop_to_detail"
+
+#define NOTI_Shop_To_Detail                        @"noti_shop_to_detail"
+
+// @"http://192.168.1.133:8020"
+#define BASEURL  @"http://api.feierlife.com:8020"//@"http://192.168.1.133:8020"//   // //// //// //// //@"http://test.xjbyte.com"   @"http://120.76.73.162:8080"     //debug    
+
+#define MD_agt_num  @"10013"
+#define MD_app_Key  @"8d0580186667ae63f56b588e7c643dfa"
+
+//mob相关
+#define MOB_APPKEY             @"1f3b9d426b20c"
+#define MOB_APPSECRET          @"c8ac0cae0445fcb537141de553c3d848"
+
+
+#define BAIDU_APPKEY     @"o6P2EGwqwBM8PUbbQmiKojm5vTRpajtr"
+#define USHARE_DEMO_APPKEY     @"594640865312dd9686001c32"
+
+#define QQAppID                 @"1106167503"
+//tencent1106167503
+//QQ41EEC6CF
+//wxeefc0b60f30d5364
+
+#define QQAPPKEY                  @"GsxciOklIVBj8tMI"
+
+#define WXAppID                  @"wxeefc0b60f30d5364"
+#define WXAppSecreat             @"392ade7b18b9013e1555790a92f488f3"
+
+//ea3d1085c21a94fcbeeeded5
+#define JPushAppKey             @"ea3d1085c21a94fcbeeeded5"
+
+//支付宝
+#define APlayAPPID             @"2017071207723277"
+
+//设备标示。
+#define DeviceKey  @"registrationId"
+#define USERINFO  @"userinfo"
+#define YESNO  @"YESNO"
+//@"YESNO"
+
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
+
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>//引入云检索功能所有的头文件
+
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
+
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>//引入计算工具所有的头文件
+
+//#import <BaiduMapAPI_Radar/BMKRadarComponent.h>//引入周边雷达功能所有的头文件
+
+#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
+
+#endif /* FEpch_pch */

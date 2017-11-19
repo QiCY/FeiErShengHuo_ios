@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>001</key>
+	<string>[强]</string>
+	<key>002</key>
+	<string>[得意]</string>
+	<key>003</key>
+	<string>[流泪]</string>
+	<key>004</key>
+	<string>[睡]</string>
+	<key>005</key>
+	<string>[可怜]</string>
+	<key>006</key>
+	<string>[发怒]</string>
+	<key>007</key>
+	<string>[惊讶]</string>
+	<key>008</key>
+	<string>[可爱]</string>
+	<key>009</key>
+	<string>[流汗]</string>
+	<key>010</key>
+	<string>[疑问]</string>
+	<key>011</key>
+	<string>[晕]</string>
+	<key>012</key>
+	<string>[敲打]</string>
+	<key>013</key>
+	<string>[坏笑]</string>
+	<key>014</key>
+	<string>[亲亲]</string>
+	<key>015</key>
+	<string>[囧]</string>
+	<key>016</key>
+	<string>[OK]</string>
+	<key>017</key>
+	<string>[胜利]</string>
+	<key>018</key>
+	<string>[弱]</string>
+	<key>019</key>
+	<string>[心碎]</string>
+	<key>020</key>
+	<string>[爱心]</string>
+	<key>021</key>
+	<string>[握手]</string>
+	<key>022</key>
+	<string>[色]</string>
+	<key>023</key>
+	<string>[嘘]</string>
+	<key>024</key>
+	<string>[调皮]</string>
+	<key>025</key>
+	<string>[偷笑]</string>
+	<key>026</key>
+	<string>[鄙视]</string>
+	<key>027</key>
+	<string>[威武]</string>
+	<key>028</key>
+	<string>[憨笑]</string>
+	<key>029</key>
+	<string>[斜眼]</string>
+	<key>030</key>
+	<string>[财迷]</string>
+</dict>
+</plist>
